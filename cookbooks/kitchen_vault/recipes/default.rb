@@ -4,7 +4,9 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+# You can comment this line, or set it to true, if you want to see your converge sucessfully!
 node.normal['chef-vault']['databag_fallback'] = false
+
 dbpassword = chef_vault_item("secrets", "dbpassword")
 
 log 'message' do
